@@ -30,8 +30,8 @@ function updateWhatsAppNumber(phoneNumber) {
     });
 }
 
-// Uncomment and set your actual WhatsApp number below:
-// updateWhatsAppNumber('15551234567');
+ Uncomment and set your actual WhatsApp number below:
+ updateWhatsAppNumber('27836781607');
 
 // Add active class to navigation links based on scroll position
 window.addEventListener('scroll', function() {
