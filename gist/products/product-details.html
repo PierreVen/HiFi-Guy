@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | The HiFi Guy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .product-detail-hero {
+            padding: 120px 0 60px;
+            margin-top: 80px;
+            background: #f8f8f8;
+        }
+
+        .breadcrumb {
+            background: #f8f8f8;
+            padding: 20px 0;
+        }
+
+        .breadcrumb-links {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-links a {
+            color: #777;
+            text-decoration: none;
+        }
+
+        .breadcrumb-links a:hover {
+            color: #d4af37;
+        }
+
+        .product-detail-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .product-gallery {
+            position: sticky;
+            top: 100px;
+        }
+
+        .product-main-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .product-thumbnails {
+            display: flex;
+            gap: 10px;
+        }
+
+        .product-thumbnail {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .product-thumbnail:hover,
+        .product-thumbnail.active {
+            opacity: 1;
+        }
+
+        .product-info {
+            padding: 30px;
+        }
+
+        .product-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 2rem;
+            color: #d4af37;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .product-description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .product-specs {
+            margin: 30px 0;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .spec-item {
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            border-left: 3px solid #d4af37;
+        }
+
+        .spec-label {
+            font-weight: 600;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .spec-value {
+            color: #555;
+        }
+
+        .product-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background: #128C7E;
+        }
+
+        .related-products {
+            padding: 80px 0;
+            background: white;
+        }
+
+        @media (max-width: 768px) {
+            .product-detail-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .product-gallery {
+                position: static;
+            }
+            
+            .product-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">The <span>Hifi</span> Guy</a>
+            <nav>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="all-products.html">Products</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-links">
+                <a href="../index.html">Home</a>
+                <span>></span>
+                <a href="all-products.html">Products</a>
+                <span>></span>
+                <a href="speakers.html">Speakers</a>
+                <span>></span>
+                <span>Reference Bookshelf Speakers</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-hero">
+        <div class="container">
+            <div class="product-detail-content">
+                <div class="product-gallery">
+                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Reference Bookshelf Speakers" 
+                         class="product-main-image">
+                    <div class="product-thumbnails">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Front View" 
+                             class="product-thumbnail active">
+                        <img src="https://images.unsplash.com/photo-1600003263720-95b45a4035d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Side View" 
+                             class="product-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1589001904855-7d716b7bceae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Detail View" 
+                             class="product-thumbnail">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <h1 class="product-title">Reference Bookshelf Speakers</h1>
+                    <div class="product-price">$799.99</div>
+                    
+                    <p class="product-description">
+                        Experience studio-grade audio quality with our Reference Bookshelf Speakers. 
+                        Featuring advanced planar magnetic drivers and hand-finished walnut cabinets, 
+                        these speakers deliver exceptional clarity and precision across the entire frequency spectrum.
+                    </p>
+                    
+                    <div class="product-specs">
+                        <h3>Technical Specifications</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Driver Type</span>
+                                <span class="spec-value">Planar Magnetic</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Frequency Response</span>
+                                <span class="spec-value">20Hz - 40kHz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Power Handling</span>
+                                <span class="spec-value">200W RMS</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Impedance</span>
+                                <span class="spec-value">8 Ohms</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Sensitivity</span>
+                                <span class="spec-value">90 dB</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Dimensions</span>
+                                <span class="spec-value">12" x 8" x 10"</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Advanced planar magnetic drivers for exceptional clarity</li>
+                            <li>Hand-finished walnut wood cabinets</li>
+                            <li>Bi-wire capable binding posts</li>
+                            <li>Magnetic grille system</li>
+                            <li>5-year manufacturer warranty</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <a href="https://wa.me/15551234567?text=Hi%20The%20Hifi%20Guy!%20I'm%20interested%20in%20the%20Reference%20Bookshelf%20Speakers" 
+                           class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Inquire on WhatsApp
+                        </a>
+                        <a href="../index.html#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Request Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 50px;">You Might Also Like</h2>
+            <div class="product-grid">
+                <!-- Related product cards -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600003263720-95b45a4035d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Floor Standing Speakers">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tower Floor Standing Speakers</h3>
+                        <p>Powerful floor-standing speakers with room-filling sound.</p>
+                        <div class="product-price">$1,299.99</div>
+                        <a href="product-detail.html?product=tower-floor" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Add more related products -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>The Hifi Guy</h3>
+                    <p>Your trusted source for premium audio equipment and expert advice on all things high-fidelity.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Product Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#speakers">Speakers</a></li>
+                        <li><a href="#headphones">Headphones</a></li>
+                        <li><a href="#turntables">Turntables</a></li>
+                        <li><a href="#amplifiers">Amplifiers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="all-products.html">Products</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 The Hifi Guy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Product gallery functionality
+        const mainImage = document.querySelector('.product-main-image');
+        const thumbnails = document.querySelectorAll('.product-thumbnail');
+        
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                // Update main image
+                mainImage.src = this.src;
+                
+                // Update active thumbnail
+                thumbnails.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Get product details from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('product');
+        
+        // In a real application, you would fetch product data based on productId
+        // For now, we'll use the static content
+    </script>
+</body>
+</html>
