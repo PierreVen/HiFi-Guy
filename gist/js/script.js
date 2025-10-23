@@ -4,39 +4,31 @@ document.querySelector('.mobile-menu').addEventListener('click', function() {
 });
 
 // Smooth Scrolling for Navigation Links
-document.querySelectorAll('nav a').forEach(anchor => {
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         
         const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
         const targetElement = document.querySelector(targetId);
         
-        window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: 'smooth'
-        });
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
         
         // Close mobile menu after clicking a link
         document.querySelector('nav ul').classList.remove('active');
     });
 });
 
-// Update WhatsApp number - Replace with actual number
-function updateWhatsAppNumber(phoneNumber) {
-    // Format: 15551234567 (country code + number without spaces or special chars)
-    const whatsappLinks = document.querySelectorAll('a[href*="wa.me"]');
-    whatsappLinks.forEach(link => {
-        link.href = link.href.replace(/wa\.me\/\d+/, `wa.me/${phoneNumber}`);
-    });
-}
-
- Uncomment and set your actual WhatsApp number below:
- updateWhatsAppNumber('27836781607');
-
 // Add active class to navigation links based on scroll position
 window.addEventListener('scroll', function() {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
     
     let current = '';
     
@@ -65,3 +57,14 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(event) {
+    const nav = document.querySelector('nav');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const navUl = document.querySelector('nav ul');
+    
+    if (!nav.contains(event.target) && !mobileMenu.contains(event.target)) {
+        navUl.classList.remove('active');
+    }
+});
