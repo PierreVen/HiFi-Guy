@@ -17,6 +17,14 @@
             margin-top: 80px;
         }
 
+        .category-hero h1 {
+            color: white;
+        }
+
+        .category-hero p {
+            color: #e0e0e0;
+        }
+
         .breadcrumb {
             background: #f8f8f8;
             padding: 20px 0;
@@ -106,24 +114,82 @@
         </div>
     </section>
 
-    <!-- Products Grid (Same as in all-products.html but only speakers) -->
+    <!-- Products Grid -->
     <section class="products">
         <div class="container">
+            <h2>Our Speaker Collection</h2>
             <div class="product-grid">
-                <!-- Include all speaker products from all-products.html -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Bookshelf Speakers">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Bookshelf Speakers">
                     </div>
                     <div class="product-info">
                         <h3>Reference Bookshelf Speakers</h3>
                         <p>Compact yet powerful bookshelf speakers with exceptional clarity.</p>
-                        <div class="product-price">$799.99</div>
+                        <div class="product-price">R799.99</div>
                         <a href="product-detail.html?product=reference-bookshelf" class="btn">View Details</a>
                     </div>
                 </div>
-                
-                <!-- Add other speaker products -->
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600003263720-95b45a4035d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Floor Standing Speakers">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tower Floor Standing Speakers</h3>
+                        <p>Powerful floor-standing speakers with room-filling sound.</p>
+                        <div class="product-price">R1,299.99</div>
+                        <a href="product-detail.html?product=tower-floor" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1589001904855-7d716b7bceae?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Vintage Speakers">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vintage Wooden Speakers</h3>
+                        <p>Beautifully restored vintage speakers with warm sound character.</p>
+                        <div class="product-price">R949.99</div>
+                        <a href="product-detail.html?product=vintage-wooden" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1545113610-141e1b0cf1a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Studio Monitors">
+                    </div>
+                    <div class="product-info">
+                        <h3>Studio Monitor Speakers</h3>
+                        <p>Professional studio monitors for accurate sound reproduction.</p>
+                        <div class="product-price">R1,099.99</div>
+                        <a href="product-detail.html?product=studio-monitors" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Compact Speakers">
+                    </div>
+                    <div class="product-info">
+                        <h3>Compact Desktop Speakers</h3>
+                        <p>Small footprint, big sound. Perfect for desktop setups.</p>
+                        <div class="product-price">R549.99</div>
+                        <a href="product-detail.html?product=compact-desktop" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1519558260268-cde7e03a0152?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Wireless Speakers">
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Wireless Speakers</h3>
+                        <p>High-quality wireless speakers with audiophile-grade sound.</p>
+                        <div class="product-price">R849.99</div>
+                        <a href="product-detail.html?product=premium-wireless" class="btn">View Details</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -140,10 +206,10 @@
                 <div class="footer-column">
                     <h3>Product Categories</h3>
                     <ul class="footer-links">
-                        <li><a href="#speakers">Speakers</a></li>
-                        <li><a href="#headphones">Headphones</a></li>
-                        <li><a href="#turntables">Turntables</a></li>
-                        <li><a href="#amplifiers">Amplifiers</a></li>
+                        <li><a href="speakers.html">Speakers</a></li>
+                        <li><a href="all-products.html#headphones">Headphones</a></li>
+                        <li><a href="all-products.html#turntables">Turntables</a></li>
+                        <li><a href="amps.html">Amplifiers</a></li>
                     </ul>
                 </div>
                 
@@ -164,6 +230,10 @@
         </div>
     </footer>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/27836781607?text=Hi%20The%20Hifi%20Guy!%20I%20have%20a%20question%20about%20your%20speakers." class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="../js/script.js"></script>
 </body>
