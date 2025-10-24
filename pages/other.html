@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other | The HiFi Guy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Additional styles for products page */
+        .products-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 0 80px;
+            margin-top: 80px;
+        }
+
+        .category-nav {
+            background: #f8f8f8;
+            padding: 40px 0;
+        }
+
+        .category-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .category-btn {
+            padding: 12px 25px;
+            background: white;
+            border: 2px solid #d4af37;
+            border-radius: 25px;
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .category-btn:hover,
+        .category-btn.active {
+            background: #d4af37;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .category-section {
+            padding: 80px 0;
+        }
+
+        .category-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #333;
+            position: relative;
+        }
+
+        .category-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #d4af37;
+        }
+
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin: 40px 0;
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-to-top:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">The <span>Hifi</span> Guy</a>
+            <nav>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="all-products.html">Products</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="other.html" class="active">Other</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Hero -->
+    <section class="products-hero">
+        <div class="container">
+            <h1>Premium Audio Products</h1>
+            <p>Discover our complete collection of high-fidelity audio equipment</p>
+        </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <section class="category-nav">
+        <div class="container">
+            <div class="category-buttons">
+                <a href="#speakers" class="category-btn">Speakers</a>
+                <a href="#headphones" class="category-btn">Headphones</a>
+                <a href="#turntables" class="category-btn">Turntables</a>
+                <a href="#amplifiers" class="category-btn">Amplifiers</a>
+                <a href="#accessories" class="category-btn">Accessories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section class="category-section" id="speakers">
+        <div class="container">
+            <h2 class="category-title">Premium Speakers</h2>
+            <div class="product-grid">
+                <!-- Speaker 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Bookshelf Speakers">
+                    </div>
+                    <div class="product-info">
+                        <h3>Reference Bookshelf Speakers</h3>
+                        <p>Compact yet powerful bookshelf speakers with exceptional clarity.</p>
+                        <div class="product-price">$799.99</div>
+                        <a href="product-detail.html?product=reference-bookshelf" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Speaker 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600003263720-95b45a4035d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Floor Standing Speakers">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tower Floor Standing Speakers</h3>
+                        <p>Powerful floor-standing speakers with room-filling sound.</p>
+                        <div class="product-price">$1,299.99</div>
+                        <a href="product-detail.html?product=tower-floor" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Speaker 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1589001904855-7d716b7bceae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Vintage Speakers">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vintage Wooden Speakers</h3>
+                        <p>Beautifully restored vintage speakers with warm sound character.</p>
+                        <div class="product-price">$949.99</div>
+                        <a href="product-detail.html?product=vintage-wooden" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#top" class="back-to-top">Back to Top ↑</a>
+        </div>
+    </section>
+
+    <!-- Headphones Section -->
+    <section class="category-section" id="headphones">
+        <div class="container">
+            <h2 class="category-title">Premium Headphones</h2>
+            <div class="product-grid">
+                <!-- Headphone 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2065&q=80" alt="Over-Ear Headphones">
+                    </div>
+                    <div class="product-info">
+                        <h3>Reference Over-Ear Headphones</h3>
+                        <p>Professional-grade over-ear headphones with noise cancellation.</p>
+                        <div class="product-price">$399.99</div>
+                        <a href="product-detail.html?product=reference-overear" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Headphone 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2065&q=80" alt="Wireless Headphones">
+                    </div>
+                    <div class="product-info">
+                        <h3>Wireless Noise-Canceling Headphones</h3>
+                        <p>Premium wireless headphones with advanced noise cancellation.</p>
+                        <div class="product-price">$349.99</div>
+                        <a href="product-detail.html?product=wireless-nc" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#top" class="back-to-top">Back to Top ↑</a>
+        </div>
+    </section>
+
+    <!-- Add similar sections for Turntables, Amplifiers, and Accessories -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>The Hifi Guy</h3>
+                    <p>Your trusted source for premium audio equipment and expert advice on all things high-fidelity.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Product Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#speakers">Speakers</a></li>
+                        <li><a href="#headphones">Headphones</a></li>
+                        <li><a href="#turntables">Turntables</a></li>
+                        <li><a href="#amplifiers">Amplifiers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="all-products.html">Products</a></li>
+                        <li><a href="other.html">Other</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 The Hifi Guy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Smooth scrolling for category buttons
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetSection.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Update active category button on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.category-section');
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 150)) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            categoryButtons.forEach(button => {
+                button.classList.remove('active');
+                if (button.getAttribute('href') === `#${currentSection}`) {
+                    button.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
