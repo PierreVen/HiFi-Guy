@@ -177,7 +177,7 @@ nav ul li a:hover {
 
 /* Products Section */
 .products {
-    background-color: white;
+    background-color: var(--primary);
 }
 
 .product-grid {
